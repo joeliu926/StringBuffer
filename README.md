@@ -3,48 +3,46 @@
 Append 、AppendFormat、Length、Equal、IsEmpt、Clear、Insert、Remove
 Replace、IndexOf、LastIndexOf、Reverse、Split
 
-		var sb = new StringBuffer('init');
-		
-		console.log(sb.ToString());   // 输出 init
-		
-Append：
 
+
+		var sb = new StringBuffer('init');
+		console.log(sb.ToString());   // 输出 init
+//Append：
 		sb.Append('hello');
 		sb.Append('world');
-AppendFormat：
+		
+//AppendFormat：
 		sb.AppendFormat('format{0}','hello');
-		
-Length：
-		
+//Length：
 		console.log(sb.ToString());  //输出 inithelloworld
 		console.log(sb.Length()); //输出 14
-Equal：
+//Equal：
 		sb.Equal('inithelloworld');
 		//输出  true
-		console.log(sb);
-IsEmpty：
+		console.log(sb.ToString());
+//IsEmpty：
 		//输出  fale
 		console.log(sb.IsEmpty());
-Clear：	
+//Clear：	
 		sb.Clear();
-		console.log(sb);
+		console.log(sb.ToString());
 		sb.Append('hello');
-Insert：
+//Insert：
 		sb.Insert(2,'111111');
-		console.log(sb);
-Remove：
+		console.log(sb.ToString());
+//Remove：
 		sb.Remove(2,6);
-		console.log(sb);
-Replace：
+		console.log(sb.ToString());
+//Replace：
  		sb.Replace('o','T');
- 		console.log(sb);
-IndexOf：
+ 		console.log(sb.ToString());
+//IndexOf：
  		console.log(sb.IndexOf('l'));
-LastIndexOf：
+//LastIndexOf：
  		console.log(sb.LastIndexOf('l'));
-Reverse：
+//Reverse：
  		sb.Reverse();
  		
- 		console.log(sb);
-Split：
-    console.log(sb.Split('e'));
+ 		console.log(sb.ToString());
+//Split：
+    		console.log(sb.Split('e'));

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="dest/StringBuffer.min.js"></script>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		//示例：
+		var sb = new StringBuffer('init');
+		
+		console.log(sb.ToString());   // 输出 init
+		
+		sb.Append('hello');
+		sb.Append('world');
+		
+		console.log(sb.ToString());  //输出 inithelloworld
+		console.log(sb.Length()); //输出 14
+		
+		sb.Equal('inithelloworld');
+		//输出  true
+		console.log(sb);
+		//输出  fale
+		console.log(sb.IsEmpty());
+		
+		sb.Clear();
+		console.log(sb);
+		sb.Append('hello');
+		sb.Insert(2,'111111');
+		console.log(sb);
+		
+		sb.Remove(2,6);
+		console.log(sb);
+ 
+ 		sb.Replace('o','T');
+ 		console.log(sb);
+ 
+ 		console.log(sb.IndexOf('l'));
+ 		
+ 		console.log(sb.LastIndexOf('l'));
+ 		
+ 		sb.Reverse();
+ 		
+ 		console.log(sb);
+ 
+  		console.log(sb.Split('e'));
+ 
+		
+	</script>
+</html>

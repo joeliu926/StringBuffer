@@ -1,5 +1,5 @@
-/**
- * Created by JoeLiu on 2016-08-18.
+﻿/**
+ * Created by JoeLiu on 2016-08-18.depandens no
  */
 //构造函数
 function StringBuffer()
